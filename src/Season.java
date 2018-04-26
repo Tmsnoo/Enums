@@ -8,17 +8,17 @@ public enum Season {
 	AUTUMN("pl","Jesień"),
 	WINTER("pl","Zima");
 	
-	private Map<String, String> transletions = new HashMap<>();
+	private Map<String, String> translations = new HashMap<>();
 	
 	private Season(String language, String translation) {
 		addTranslation(language, translation);
 	}
 	
 	public String getTranslation(String language) {
-		return this.transletions.get(language);
+		return this.translations.get(language);
 	}
 	public void addTranslation(String language, String translation) {
-		transletions.put(language, translation);
+		translations.put(language, translation);
 	}
 	
 }
